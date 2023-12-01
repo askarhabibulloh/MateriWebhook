@@ -14,7 +14,7 @@ app.use(jsonParser);
 app.use(urlencodedParser);
 
 app.get("/", async (req, res) => {
-  const response = await fetch("http://localhost:3000/");
+  const response = await fetch("http://localhost:3000/github-event");
   const body = await response.text();
 
   console.log(body);
